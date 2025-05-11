@@ -9,7 +9,7 @@ public class SequenciaGenetica {
     public static void main(String[] args) {
         
     	String arquivoEntrada = "C:\\Leitor_de_genes\\Leitor_de_Genes\\src\\Principal\\Animais.txt";
-        String arquivoSaida = "C:\\kkkkkk\\resultado_comparacao3.txt";
+        String arquivoSaida = "C:\\kkkkkk\\resultado_comparacao5.txt";
 
         try {
             Map<String, String> sequencias = lerAsSequencias(arquivoEntrada);
@@ -48,11 +48,10 @@ public class SequenciaGenetica {
                 }
             }
 
-            salvarResultado(arquivoSaida, String.join("\n", resultados));
-            System.out.println("Comparações salvas em: " + arquivoSaida);
+            salvarResultado(arquivoSaida, String.join("\n", resultados)); 
 
         } catch (IOException e) {
-            System.err.println("Erro ao processar o arquivo: " + e.getMessage());
+            
         }
     }
 
